@@ -1,0 +1,75 @@
+.heading{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    background-image:  linear-gradient(to right, #847ca7,#f6f2eb,white);
+} 
+.heading>h2{
+    text-align: center;
+    font-weight: medium;
+    font-size: 40pt;
+    color: #4025b4;
+    font-family: 'Source Serif Pro', serif;
+}
+.heading>p{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15pt;
+    color: #4025b4;
+}
+.form-group>h3{
+    text-align: center;
+    font-weight: medium;
+    font-size: 25pt;
+    color: #4025b4;
+    font-family: 'Source Serif Pro', serif;
+}
+.form-group:not(:first-of-type){
+    padding-top: 65px;
+}
+.quiz{
+    background-color: #fffaf1;
+    padding-top:4vh;
+    padding-bottom: 4vh;
+}
+.button-group{
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.btn{
+    background-color: white;
+    color:#4025b4;
+    border: 2px solid #4025b4;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.submit-btn{
+    font-size: 15pt;
+    font-weight: bold;
+}
+.radio-btn{
+    
+    font-size: 12.5pt;
+    font-weight: bold;
+    
+}
+.btn:hover{
+    color:black;
+    border: 2px solid black;
+}
+.submit-btn:hover{
+    color: white;
+    background-color: #4025b4;
+}
+.active{
+    color: white !important;
+    background-color: #4025b4 !important;
+}

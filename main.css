@@ -1,0 +1,280 @@
+div{
+   margin: 0;
+   padding: 0;
+}
+body, html{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+}
+.top-nav{
+    width: 80%;
+    margin: auto;
+}
+.top-nav-container{
+    padding: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    width: 45%;
+}
+.menu-list{
+    padding:0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu-list-el{
+    margin-left: 25px;
+
+}
+.menu-list-el:last-of-type{
+    margin-right: 20px;
+}
+.social-ico{
+    height: 35px;
+    max-width: 35px;
+}
+.main-img-container{
+    margin:0;
+    width: 45%
+}
+.main-img{
+    height: 50px;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    padding-top: 10px;
+}
+.menu-list-el> a {
+    text-decoration: none;
+    color: #616161;
+    font-size: 20px; 
+}
+.menu-list-el> a#current{
+    color: #191919;
+    font-weight: bold;
+}
+.footer{
+    text-align: center;
+    background-color: #7bd9c8;
+    width: 100%;
+    margin: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    
+}
+.footer>p{
+    color: #4025b4;
+    font-weight: lighter;
+    font-size: 12.5pt;
+}
+.squiggly>path{
+    stroke: #4025b4;
+    stroke-width: 2px;
+    
+}
+.thin-squiggly>path{
+    stroke: #4025b4;
+}
+
+.small-squiggly{
+    width: 204px;
+}
+.big-squiggly{
+    width: 324px;
+}
+.squiggly-container{
+    display: flex;
+    justify-content: center;
+}
+.long-description{
+    width: 60%;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 70px;
+}
+.small-title{
+    color: #4025b4;
+    font-size: 25pt;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+}
+.medium-title{
+    color: #4025b4;
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.extra-small-title{
+    color: #4025b4;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+}
+.extra-small-grey-title{
+    font-size: 12.5pt;
+    font-weight: bold;
+    font-family: 'Metorpolis Medium', sans-serif;
+}
+
+.grey-text{
+    color: #616161;
+    font-family: 'Metorpolis Medium', sans-serif;
+    font-weight: lighter;
+    font-size: 15pt !important;
+}
+.purple-text{
+    color: #4025b4;
+    font-family: 'Metorpolis Medium', sans-serif;
+    font-weight: lighter;
+    font-size: 12.5pt !important;
+    text-decoration: none;
+}
+.grey-small-text{
+    color: #464646;
+    font-family: 'Metorpolis Medium', sans-serif;
+    font-weight: lighter;
+    font-size: 12.5pt !important;
+}
+.description-part{
+    display: flex;
+    flex-direction: row;
+}
+.thumb-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.thumb-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.medium-img{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+.center-text{
+    text-align: center;
+}
+.overview{
+    width: 60%;
+    max-width: 800px;
+    margin: auto;
+}
+.overview-group>.btn{
+    margin-top: 25px;
+}
+.btn{
+    display: inline-block;
+    border: 2px solid #4025b4;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12.5pt;
+    color: #4025b4;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    color: white;
+    background-color: #4025b4;
+}
+.adress-card{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.order-row{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.order-card{
+    border:  1px solid #616161;
+    max-width: 200px;
+    max-height: 150px;
+}
+
+.mx1{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.my1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.order-card>p{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+    
+}
+.card-adress-text{
+    color: #616161;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+}
+.card-text{
+    color: #444444;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+}
+.price{
+    color: black;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+
+}
+.price>a{
+    text-decoration: none;
+    color: #4025b4;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.subscription-card{
+    border: 1px solid #616161;
+    max-height: 500px;
+    width: 400px;
+    padding-bottom: 15px;
+    margin-bottom: 100px;
+}
+.subscription-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7px;
+}
+.card-img{
+    width: 60px;
+    height: 60px;
+
+}
+@media only screen and (max-device-width: 600px){
+    .medium-img,.top-nav,.social-ico{
+        display: none !important;
+    }
+    .thumb-img:last-child{
+        display: none !important;
+    }
+}
