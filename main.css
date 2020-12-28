@@ -329,6 +329,7 @@ html{
 .subscription-section{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap:25px;
 }
 .site-group{
@@ -346,6 +347,12 @@ html{
 }
 .indent{
     margin-left: 25px;
+}
+.quiz-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px
 }
 @media only screen and (max-device-width: 600px){
     .medium-img,.top-nav,.social-ico{
