@@ -354,6 +354,36 @@ html{
     justify-content: center;
     gap: 10px
 }
+.product-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.product-card-image{
+    width: 200px;
+    border-radius: 50%;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-card>p,
+.product-card>h2{
+    margin: 0;
+}
+.center-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nmb{
+    margin-bottom: 0;
+}
+.nmt{
+    margin-top: 0;
+}
 @media only screen and (max-device-width: 600px){
     .medium-img,.top-nav,.social-ico{
         display: none !important;
