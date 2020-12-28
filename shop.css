@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
-@import url('fonts/Metropolis-Medium.otf');
-@import url('fonts/Metropolis-Light.otf');
 
 .jumbotron{
     width: 50%;
@@ -25,17 +22,7 @@
     color: #4025b4;
     font-family: 'Source Serif Pro', serif;
 }
-.small-jumbotron{
-    width: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background-image: linear-gradient(to right, #7bd9c8, white);
-}
-.small-jumbotron>h1{
-    width: 60%;
-    max-width: 800px;
-    margin: auto;
-}
+
 .subscription{
     padding-top: 8vh;
     width: 60%;

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('fonts/Metropolis-Medium.otf');
+@import url('fonts/Metropolis-Light.otf');
+
 div{
    margin: 0;
    padding: 0;
@@ -218,7 +222,17 @@ html{
     max-width: 200px;
     max-height: 150px;
 }
-
+.small-jumbotron{
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-image: linear-gradient(to right, #7bd9c8, white);
+}
+.small-jumbotron>h1{
+    width: 60%;
+    max-width: 800px;
+    margin: auto;
+}
 .mx1{
     margin-left: 15px;
     margin-right: 15px;
@@ -254,18 +268,20 @@ html{
     text-decoration: none;
     color: #4025b4;
 }
-
-.button-container{
+.vertical-button-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.button-container{
+    display: flex;
+    flex-direction: row;
 }
 .subscription-card{
     border: 1px solid #616161;
     max-height: 500px;
     width: 400px;
     padding-bottom: 15px;
-    margin-bottom: 100px;
 }
 .subscription-row{
     display: flex;
@@ -277,6 +293,43 @@ html{
     width: 60px;
     height: 60px;
 
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.contact-form>input[type="email"],
+.contact-form>input[type="text"]{
+    padding: 7px;
+}
+.contact-form>input[type="submit"]{
+    display: inline-block;
+    width: 160px;
+    margin-top: 10px;
+}
+.contact-form>textarea{
+    resize: none;
+    padding: 7px;
+}
+.contact-link{
+    color: #4025b4;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-size: 12.5pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+.contact-ico{
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    margin-bottom: -15px;
+}
+.subscription-section{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
 }
 @media only screen and (max-device-width: 600px){
     .medium-img,.top-nav,.social-ico{
