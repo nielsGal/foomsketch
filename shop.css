@@ -16,11 +16,10 @@
     font-family: 'Source Serif Pro', serif;
 }
 .jumbotron>p{
-    font-size: 17pt;
-    font-weight: lighter;
+    font-size: 16pt;
     text-align: center;
     color: #4025b4;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Metorpolis Medium', sans-serif;
 }
 
 .subscription{
@@ -64,7 +63,6 @@
 .explanation{
     width: 100%;
     background-color: rgba(123, 217,200, 0.1);
-    opacity: 0.9;
 }
 .soap-container{
     display: flex;
@@ -78,13 +76,6 @@
     color: #4025b4;
     font-size: 23pt;
     font-weight: medium;
-}
-.soap-container>p{
-    font-family: 'Metorpolis Medium', sans-serif;
-    text-align: center;
-    color: #464646;
-    font-size: 15pt;
-    font-weight: lighter;
 }
 .soap-container>img{
     width: 250px;

@@ -331,6 +331,18 @@ html{
     flex-direction: row;
     gap:25px;
 }
+.site-group{
+    padding-left: 25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.site-group:nth-child(2n){
+    background-color: rgba(123, 217,200, 0.1);
+}
+.ct{
+    text-align: center;
+}
 @media only screen and (max-device-width: 600px){
     .medium-img,.top-nav,.social-ico{
         display: none !important;
