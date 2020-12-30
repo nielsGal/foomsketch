@@ -69,6 +69,7 @@ html{
     text-decoration: none;
     color: #ffffff;
     font-size: 20px; 
+    font-family: 'Metorpolis Medium', sans-serif;
 }
 .menu-list-el> a#current{
     color: #191919;
