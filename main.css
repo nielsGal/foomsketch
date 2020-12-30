@@ -64,7 +64,7 @@ html{
 }
 .menu-list-el> a {
     text-decoration: none;
-    color: #616161;
+    color: #ffffff;
     font-size: 20px; 
 }
 .menu-list-el> a#current{
