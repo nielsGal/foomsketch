@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foom - Abonnementen</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/CalendarPicker.style.css">
+  </head>
+  <body>
+   
+    <section class="top-nav">
+      <div class="top-nav-container">
+        <div class="main-img-container">
+          <img src="./images/main-img.png" alt="" class="main-img" />
+        </div>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-list-el"><a href="./shop.html">shop</a></li>
+            <li class="menu-list-el"><a href="./account.html">account</a></li>
+            <li class="menu-list-el">
+              <a href="./abonnement.html" id="current">abbonementen</a>
+            </li>
+            <li class="menu-list-el"><a href="./contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <nav class="social">
+          <img class="social-ico twitter" src="./images/twitter.png" alt="" />
+          <img class="social-ico facebook" src="./images/facebook.png" alt="" />
+          <img
+            class="social-ico instagram"
+            src="./images/instagram.png"
+            alt=""
+          />
+        </nav>
+      </div>
+    </section>
+    <section class="small-jumbotron"> <h1 class="medium-title ct">Bestellen</h1></section>
+    <section class="subscription-overview-container">
+        <div class="subscription-leftside-container">
+        <div class="subscription-order-overview">
+        <h2 class="small-title ct">Bestelling</h2>
+        <div class="subscription-card">
+            <div class="subscription-adress mx1">
+                <h2 class="extra-small-title">Standaard Skincare</h2>
+                <p class="card-adress-text">Skincare voor 1 persoon</p>
+            </div>
+            <hr>
+            <div class="subscription-row mx1 my1"><img class="card-img" src="./images/soap1.jpg" alt=""> <p class="card-text">Lavendel Body Bar</p> <p class="price">€4.99</p></div>
+            <div class="subscription-row mx1 my1"><img class="card-img" src="./images/soap2.jpg" alt=""> <p class="card-text">Aloe Vera Body Bar</p> <p class="price">€7.99</p></div>
+            <div class="subscription-row mx1 my1"><img class="card-img" src="./images/soap3.jpg" alt=""> <p class="card-text">Koriander Body Bar</p> <p class="price">€9.99</p></div>
+            <div class="subscription-row mx1 my1"><img class="card-img" src="./images/soap4.jpg" alt=""> <p class="card-text">Lavendel Zeep </p> <p class="price">€12.99</p></div>
+            <a class="btn mx1" href=""> Verander </a>
+         </div>
+        </div>
+        <div class=subscription-extra-options-overview>
+            <h2 class="small-title ct">Extra</h2>
+        </div>
+    </div>
+        <div class="subcription-date-overview">
+            <h2 class="small-title">Datum</h2>
+            <div id="showcase-wrapper">
+                <div id="myCalendarWrapper"></div>
+        </div>
+    </section>
+  
+  </body>
+  <script src="./js/CalendarPicker.js"></script>
+  <script>
+    const nextYear = new Date().getFullYear() + 1;
+    const myCalender = new CalendarPicker('#myCalendarWrapper', {
+        // If max < min or min > max then the only available day will be today.
+        min: new Date(),
+        max: new Date(nextYear, 10) // NOTE: new Date(nextYear, 10) is "Sun Nov 01 <nextYear>"
+    });
+
+    const currentDateElement = document.getElementById('current-date');
+    currentDateElement.textContent = myCalender.value;
+
+    const currentDayElement = document.getElementById('current-day');
+    currentDayElement.textContent = myCalender.value.getDay();
+
+    const currentToDateString = document.getElementById('current-datestring');
+    currentToDateString.textContent = myCalender.value.toDateString();
+
+    myCalender.onValueChange((currentValue) => {
+        currentDateElement.textContent = currentValue;
+        currentDayElement.textContent = currentValue.getDay();
+        currentToDateString.textContent = currentValue.toDateString();
+
+        console.log(`The current value of the calendar is: ${currentValue}`);
+    });
+</script>
+</html>
