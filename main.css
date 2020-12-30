@@ -15,6 +15,9 @@ html{
     width: 100%;
 }
 .top-nav{
+    background-color: #7bd9c8;
+    padding-left: 10%;
+    padding-right: 10%;
     width: 80%;
     margin: auto;
 }
@@ -226,7 +229,7 @@ html{
     width: 100%;
     padding-top: 35px;
     padding-bottom: 35px;
-    background-image: linear-gradient(to right, #7bd9c8, white);
+    background-color: #7bd9c8;
 }
 .small-jumbotron>h1{
     width: 60%;
