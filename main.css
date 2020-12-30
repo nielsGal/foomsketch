@@ -346,7 +346,7 @@ html{
     padding-bottom: 50px;
     
 }
-.site-group:nth-child(2n){
+.site-group:nth-child(2n + 1){
     background-color: rgba(123, 217,200, 0.1);
 }
 .ct{
@@ -404,6 +404,16 @@ html{
 .subscription-leftside-container{
     display: flex;
     flex-direction: column;
+}
+.wavy-separation > .fill{
+    fill :#7bd9c8;
+}
+.wavy-separation > path,
+.wavy-separation > path {
+    stroke: #7bd9c8;
+}
+.wavy-separation > .wide{
+    stroke-width: 5px;
 }
 @media only screen and (max-device-width: 600px){
     .medium-img,.top-nav,.social-ico{
