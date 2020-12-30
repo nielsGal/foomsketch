@@ -21,6 +21,9 @@ html{
     width: 80%;
     margin: auto;
 }
+.jumbotron{
+    background-color: #7bd9c8;
+}
 .top-nav-container{
     padding: 0;
     padding-top: 2vh;
