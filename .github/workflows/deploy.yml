@@ -28,7 +28,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "/css/*.css"
+        source: "./css/*.css"
         target: "/var/www/foomsketch/foomsketch/css"
   js-folder:
     name: js
@@ -42,5 +42,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "/js/*.js"
+        source: "./js/*.js"
         target: "/var/www/foomsketch/foomsketch/js"
