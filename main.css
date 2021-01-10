@@ -145,6 +145,12 @@ html{
     font-weight: lighter;
     font-size: 15pt !important;
 }
+.price-text{
+    color: #000000;
+    font-family: 'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+    font-size: 22pt !important;
+}
 .purple-text{
     color: #4025b4;
     font-family: 'Metorpolis Medium', sans-serif;
@@ -214,6 +220,115 @@ html{
     color: white;
     background-color: #4025b4;
 }
+.btn-cart{
+    
+    display: inline-block;
+    border: none;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12.5pt;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #329e5c;
+}
+.btn-plus{
+    max-height: 40px;
+    display: inline-block;
+    border: none;
+    padding: 12px;
+    font-size: 11pt;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #329e5c;
+}
+.btn-plus:hover{
+    cursor: pointer;
+    background-color: #347569;
+}
+.price-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.btn-goto{
+    max-height: 18px;
+    border: none;
+    padding: 12px;
+    font-size: 11pt;
+    font-family:'Metorpolis Medium', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #0730a1;
+}
+.btn-goto:hover{
+    background-color: #1a306e;
+}
+.circle{
+    border-radius: 50%;
+}
+.related-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+
+}
+.related-img{
+    width: 250px;
+}
+.related-description{
+    font-family: 'Metorpolis Medium', sans-serif;
+    color: #616161;
+    font-size: 12pt;
+}
+.related-price{
+    font-family: 'Metorpolis Medium', sans-serif;
+    color: black;
+    font-size: 12pt;
+}
+.btn-cart:hover{
+    background-color: #347569;
+}
+.cart-form{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.btn-invis{
+    border: none;
+    background-color: transparent;
+    font-size: 12pt;
+}
+.up-down-btns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.cart-nr{
+    width: 30px;
+    padding-left: 20px;
+    font-size: 12.5pt;
+    color: #000000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .adress-card{
     display: flex;
     flex-direction: row;
@@ -223,6 +338,21 @@ html{
     display: flex;
     flex-direction: row;
     gap: 50px;
+}
+.tag-list{
+    list-style: none;
+    padding: 0;
+}
+.tag{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.tag-check{
+    color: white;
+    font-size: 11pt;
+    background-color: #329e5c;
+    border-radius: 50%;
+    padding: 8px;
 }
 .order-card{
     border:  1px solid #616161;
@@ -322,7 +452,7 @@ html{
 }
 .contact-link{
     color: #4025b4;
-    font-family:'Metorpolis Medium', sans-serif;
+    font-family:'Metropolis Medium', sans-serif;
     font-size: 12.5pt;
     font-weight: bold;
     text-decoration: none;
@@ -345,6 +475,34 @@ html{
     padding-top: 50px;
     padding-bottom: 50px;
     
+}
+.wide-group{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.m-1{
+    margin: 10px;
+}
+.my-1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ml-3{
+    margin-left: 55px;
+}
+
+.vertical-container{
+    flex-grow: 100;
+    display: flex;
+    flex-direction: column;
+}
+.horizontal-container{
+    display: flex;
+    flex-direction: row;
+}
+.product-image{
+    width: 550px;
 }
 .site-group:nth-child(2n + 1){
     background-color: rgba(123, 217,200, 0.1);
@@ -391,6 +549,10 @@ html{
 .nmt{
     margin-top: 0;
 }
+.mt-5{
+    margin-top: 55px;
+}
+
 .subscription-overview-container{
     width: 100%;
     padding-top: 35px;
